@@ -1,0 +1,81 @@
+/* Estilos globales para el cuerpo del documento */
+body {
+    /* Tipo de letra utilizado */
+    
+
+
+    /* Elimina los márgenes y el relleno por defecto */
+    margin: 0;
+    padding: 0;
+    /* Color de fondo del sitio web */
+    background-color: #FFD449;
+    text-align: center;
+}
+
+/* Estilos para el encabezado */
+header {
+    font-family: "Heebo", serif;
+    /* Color de fondo del encabezado */
+    background-color: #0F110C;
+    /* Color del texto en el encabezado */
+    color: #fff;
+    /* Relleno interno del encabezado */
+    padding: 1rem 0;
+    /* Alineación del texto en el centro */
+    text-align: center;
+}
+
+/* Estilos para la barra de navegación */
+nav ul {
+    /* Elimina el estilo de lista por defecto */
+    list-style: none;
+    /* Elimina el relleno interno */
+    padding: 0;
+    /* Alineación del texto en el centro */
+    text-align: center;
+    /* Color de fondo de la barra de navegación */
+    background-color: #444;
+    /* Elimina los márgenes */
+    margin: 0;
+}
+
+/* Estilos para los elementos de la lista en la barra de navegación */
+nav ul li {
+    /* Muestra los elementos en línea */
+    display: inline;
+    /* Elimina los márgenes */
+    margin: 0;
+}
+
+/* Estilos para los enlaces en la barra de navegación */
+nav ul li a {
+    /* Color del texto del enlace */
+    color: #fff;
+    /* Relleno interno del enlace */
+    padding: 0.5rem 1rem;
+    /* Elimina el subrayado por defecto */
+    text-decoration: none;
+}
+
+/* Estilos para el contenido principal */
+main {
+    /* Relleno interno del contenido principal */
+    padding: 1rem;
+}
+
+/* Estilos para el pie de página */
+footer {
+     font-family: "Lobster", sans-serif;
+    /* Color de fondo del pie de página */
+    background-color: #333;
+    /* Color del texto en el pie de página */
+    color: #fff;
+    /* Alineación del texto en el centro */
+    text-align: center;
+    /* Relleno interno del pie de página */
+    padding: 1rem 0;
+    /* Fija el pie de página en la parte inferior de la página */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
