@@ -8,7 +8,6 @@ body {
     margin: 0;
     padding: 0;
     /* Color de fondo del sitio web */
-    background-image: "fondobvb.jpg";
     background-color: #FFD449;
     text-align: center;
 }
@@ -24,7 +23,7 @@ header {
     padding: 1rem 0;
     /* Alineación del texto en el centro */
     text-align: center;
-     background-image: url('fondobvb.jpg');
+    background-image: url('fondobvb.jpg');
 }
 
 /* Estilos para la barra de navegación */
