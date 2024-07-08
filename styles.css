@@ -15,7 +15,7 @@ body {
 /* Estilos para el encabezado */
 header {
 
-    background-image: url("fondobvb.jpg");
+    background-image: url('fondobvb.jpg');
     background-size: cover;
     background-position: center;
     font-family: "Heebo", serif;
