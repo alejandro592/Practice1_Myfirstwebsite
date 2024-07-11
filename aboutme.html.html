@@ -2,6 +2,9 @@
 <html lang="es">
 <head>
 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider de Fotos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Lobster&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -35,9 +38,15 @@
             <h2>ABOUT MY PORTFOLIO</h2>
             <p>This is a website to watch my works of the career</p>
         </section>
-         <img src="Gato dormun.jpg" height="300" width="300" alt="Esta imagen es mi foto de perfil">
-
-       <iframe width="560" height="300" src="https://www.youtube.com/embed/d39aVzgCp50?si=hw7mr0FlLUNt4AGA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="slider">
+        <div class="slides">
+            <div class="slide"><img src="foto1.jpg" alt="Foto 1"></div>
+            <div class="slide"><img src="foto2.jpg" alt="Foto 2"></div>
+            <div class="slide"><img src="foto3.jpg" alt="Foto 3"></div>
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
     </main>
     <!-- Pie de página del sitio -->
     <footer>
