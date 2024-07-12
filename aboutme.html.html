@@ -5,6 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slider de Fotos</title>
+    <style>
+        /* Estilos para el contenedor principal del slider */
+        .slider-container {
+            max-width: 800px; /* Ancho máximo del slider */
+            margin: 0 auto; /* Centra el slider horizontalmente */
+            position: relative; /* Posición relativa para los elementos internos */
+            overflow: hidden; /* Oculta cualquier contenido que sobresalga del contenedor */
+        }
+        /* Estilos para el contenedor de las imágenes */
+        .slider-content {
+            display: flex; /* Utiliza flexbox para alinear las imágenes horizontalmente */
+            transition: transform 0.5s ease; /* Transición suave al cambiar las imágenes */
+        }
+        /* Estilos para cada imagen del slider */
+        .slider-item {
+            min-width: 100%; /* Cada imagen ocupa al menos el ancho completo del contenedor */
+            flex: 0 0 auto; /* Permite que las imágenes mantengan su tamaño original */
+        }
+    </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Lobster&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -38,15 +57,51 @@
             <h2>ABOUT MY PORTFOLIO</h2>
             <p>This is a website to watch my works of the career</p>
         </section>
-        <div class="slider">
-        <div class="slides">
-            <div class="slide"><img src="Recurso 9-20.jpg" alt="Foto 1"></div>
-            <div class="slide"><img src="CieloVerde.png" alt="Foto 2"></div>
-            <div class="slide"><img src="chocolate valkyria.png" alt="Foto 3"></div>
+         <!-- Contenedor principal del slider -->
+    <div class="slider-container">
+        <!-- Contenedor de las imágenes -->
+        <div class="slider-content">
+            <!-- Primera imagen del slider -->
+            <div class="slider-item">
+                <img src="chocolate valkyria.png" alt="Imagen 1">
+            </div>
+            <!-- Segunda imagen del slider -->
+            <div class="slider-item">
+                <img src="CieloVerde.png" alt="Imagen 2">
+            </div>
+            <!-- Tercera imagen del slider -->
+            <div class="slider-item">
+                <img src="abstracta4.jpg" alt="Imagen 3">
+            </div>
         </div>
-        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-        <button class="next" onclick="changeSlide(1)">&#10095;</button>
     </div>
+
+    <!-- JavaScript para controlar el slider -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let slideIndex = 0; // Inicializa el índice de las imágenes
+
+            // Obtiene todas las imágenes del slider
+            const slides = document.querySelectorAll(".slider-item");
+            const totalSlides = slides.length; // Calcula el número total de imágenes
+
+            // Función para mostrar las imágenes del slider
+            function showSlides() {
+                slides.forEach(slide => {
+                    slide.style.display = "none"; // Oculta todas las imágenes
+                });
+
+                slideIndex++; // Aumenta el índice de la imagen actual
+                if (slideIndex > totalSlides) { slideIndex = 1; } // Reinicia el índice si es mayor que el número total de imágenes
+
+                slides[slideIndex - 1].style.display = "block"; // Muestra la imagen actual
+                setTimeout(showSlides, 2000); // Cambia de imagen cada 2 segundos
+            }
+
+            showSlides(); // Inicia la función para mostrar las imágenes
+        });
+    </script>
+   
     </main>
     <!-- Pie de página del sitio -->
     <footer>
