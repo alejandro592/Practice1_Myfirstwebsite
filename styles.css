@@ -3,19 +3,21 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #FFD449;
+    background-color: #ffd449;
     text-align: center;
+    color: #fff; /* Color del texto */
 
-    background-image: url("bvb1.jpg"); /* Ruta a la imagen de fondo */
+    /* Fondo con imagen */
+    background-image: url("bvb1.jpg");
     background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
     background-position: center; /* Centra la imagen en el fondo */
-    color: #fff; /* Color del texto */
-    padding: 1rem 0; /* Espaciado interno */
-    text-align: center; /* Alineación del texto */
+    padding-top: 1rem; /* Espaciado interno arriba */
+    padding-bottom: 1rem; /* Espaciado interno abajo */
 }
+
 /* Estilos para el encabezado */
 header {
-    background-image: url("fondobvb.jpg"); /* Ruta a la imagen de fondo */
+    background-image: url("fondobvb.jpg");
     background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
     background-position: center; /* Centra la imagen en el fondo */
     color: #fff; /* Color del texto */
@@ -75,6 +77,5 @@ footer {
 
 /* Estilos para cada imagen del slider */
 .slider-item {
-    min-width: 100%;
-    flex: 0 0 auto;
+    flex: 0 0 100%; /* Cambié min-width por flex para ajustarse mejor al diseño flexible */
 }
