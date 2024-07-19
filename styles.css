@@ -6,7 +6,7 @@ body {
     background-color: #FFD449;
     text-align: center;
 
-    background-image: url("bvb.jpeg"); /* Ruta a la imagen de fondo */
+    background-image: url("bvb1.jpg"); /* Ruta a la imagen de fondo */
     background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
     background-position: center; /* Centra la imagen en el fondo */
     color: #fff; /* Color del texto */
