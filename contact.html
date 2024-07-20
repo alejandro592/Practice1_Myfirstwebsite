@@ -1,61 +1,46 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Alejandro Soto</title>
+    <title>Contact - Alejandro Soto</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>CONTACTO</h1>
-        <p> Póngase en contacto conmigo </p>
+        <h1>CONTACT</h1>
+        <p>Get in touch with me</p>
     </header>
     <nav>
         <ul>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Home</a>
-                <div class="dropdown-content">
-                    <a href="index.html">Home</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">About me</a>
-                <div class="dropdown-content">
-                    <a href="aboutme.html">About me</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Contact</a>
-                <div class="dropdown-content">
-                    <a href="contact.html">Contact</a>
-                </div>
-            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutme.html">About me</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
     <main>
         <section>
-            <h2>Formulario de Contacto</h2>
+            <h2>Contact Form</h2>
             <form action="submit_form.php" method="post">
-                <label for="name">Nombre:</label>
+                <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
                 
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
                 
-                <label for="message">Mensaje:</label>
+                <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
                 
-                <button type="submit">Enviar</button>
+                <button type="submit">Send</button>
             </form>
         </section>
         <section>
-            <h2>Información de Contacto</h2>
-            <p>Puede comunicarse conmigo a través de los siguientes medios:</p>
+            <h2>Contact Information</h2>
+            <p>You can reach me through the following means:</p>
             <ul>
                 <li>Email: <a href="mailto:alejandro3199210034@utd.edu.mx">alejandro3199210034@utd.edu.mx</a></li>
-                <li>Teléfono: +52 618 840 2874</li>
-                <li>Dirección: Calle FFF, Durango, Mexico</li>
+                <li>Phone: +52 618 840 2874</li>
+                <li>Address: Calle FFF, Durango, Mexico</li>
             </ul>
         </section>
     </main>
@@ -64,4 +49,5 @@
     </footer>
 </body>
 </html>
+
 
