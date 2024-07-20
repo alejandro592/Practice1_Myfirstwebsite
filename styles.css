@@ -35,7 +35,8 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block; /* Cambiado de 'inline' a 'inline-block' */
+    position: relative; /* Necesario para el menú desplegable */
     margin: 0;
 }
 
@@ -43,6 +44,32 @@ nav ul li a {
     color: #fff;
     padding: 0.5rem 1rem;
     text-decoration: none;
+    display: block; /* Asegura que toda el área del enlace sea clicable */
+}
+
+/* Estilos para el menú desplegable */
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 160px;
+    z-index: 1;
+}
+
+nav ul li .dropdown-content a {
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    display: block;
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+nav ul li .dropdown-content a:hover {
+    background-color: #555;
+}
+
+nav ul li:hover .dropdown-content {
+    display: block;
 }
 
 /* Estilos para el contenido principal */
@@ -79,3 +106,42 @@ footer {
 .slider-item {
     flex: 0 0 100%; /* Cambié min-width por flex para ajustarse mejor al diseño flexible */
 }
+
+/* Estilos para el formulario de contacto */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+}
+
