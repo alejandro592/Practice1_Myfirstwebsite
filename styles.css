@@ -7,12 +7,7 @@ body {
     text-align: center;
     color: #fff; /* Color del texto */
 
-    /* Fondo con imagen */
-    background-image: url("bvb1.jpg");
-    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
-    background-position: center; /* Centra la imagen en el fondo */
-    padding-top: 1rem; /* Espaciado interno arriba */
-    padding-bottom: 1rem; /* Espaciado interno abajo */
+   
 }
 
 /* Estilos para el encabezado */
