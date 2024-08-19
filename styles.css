@@ -17,6 +17,12 @@ header {
     padding: 1.5rem 0;
     text-align: center;
 }
+.header-img {
+    max-width: 50px; /* Tamaño reducido de la imagen */
+    height: auto;
+    display: block; /* Hace que la imagen se comporte como un bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
 
 /* Estilos para la barra de navegación */
 nav ul {
