@@ -38,32 +38,11 @@
             <h2>Who are we?</h2>
             <p>This is an online store where you will find clothing, tennis shoes and accessories only in JERSTREET.</p>
         </section>
-        <img src="jerstreet 5.png" alt="Profile Picture" class="profile-img">
+        <img src="jerstreet5.png" alt="Profile Picture" class="profile-img">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/kx-ETIEeiIc?si=rr8jnjWL7vFnmUdr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </main>
     <footer>
         <p>&copy; 2024 JERSTREET</p>
     </footer>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            let slideIndex = 0;
-            const slides = document.querySelectorAll(".slider-item");
-            const totalSlides = slides.length;
-
-            function showSlides() {
-                slides.forEach(slide => {
-                    slide.style.display = "none";
-                });
-
-                slideIndex++;
-                if (slideIndex > totalSlides) { slideIndex = 1; }
-
-                slides[slideIndex - 1].style.display = "block";
-                setTimeout(showSlides, 2000); // Cambia la imagen cada 2 segundos
-            }
-
-            showSlides();
-        });
-    </script>
 </body>
 </html>
