@@ -4,9 +4,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #588157ff;
+    color: #fff;
     text-align: center;
-    color: #fff; /* Color del texto */
-    min-height: 100vh; /* Asegura que el body ocupe al menos el 100% de la altura de la ventana */
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -14,70 +14,91 @@ body {
 /* Estilos para el encabezado */
 header {
     background-color: #344e41ff;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     text-align: center;
-    position: relative;
-}
-
-/* Estilos para la imagen en el encabezado */
-.header-img {
-    max-width: 50px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
 }
 
 /* Estilos para la barra de navegación */
 nav ul {
     list-style: none;
     padding: 0;
-    text-align: center;
-    background-color: #444;
     margin: 0;
+    background-color: #444;
+    text-align: center;
 }
 
 nav ul li {
     display: inline-block;
-    position: relative;
     margin: 0;
 }
 
 nav ul li a {
     color: #fff;
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1.5rem;
     text-decoration: none;
-    display: block;
-}
-
-/* Estilos para el menú desplegable */
-nav ul li .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #444;
-    min-width: 160px;
-    z-index: 1;
-}
-
-nav ul li .dropdown-content a {
-    color: #fff;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-nav ul li .dropdown-content a:hover {
-    background-color: #555;
-}
-
-nav ul li:hover .dropdown-content {
     display: block;
 }
 
 /* Estilos para el contenido principal */
 main {
-    padding: 1rem;
-    flex-grow: 1; /* Permite que el contenido principal crezca y ocupe el espacio disponible */
+    flex-grow: 1;
+    padding: 2rem;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Estilos para el formulario de contacto */
+form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+/* Estilos para la información de contacto */
+section ul {
+    list-style: none;
+    padding: 0;
+    color: #fff;
+}
+
+section ul li {
+    margin-bottom: 1rem;
+}
+
+section ul li a {
+    color: #fff;
+    text-decoration: underline;
 }
 
 /* Estilos para el pie de página */
