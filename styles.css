@@ -3,28 +3,31 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #588157ff;
+    background-color: #588157ff; /* Color de fondo del cuerpo */
     text-align: center;
     color: #fff; /* Color del texto */
-
-   
 }
 
 /* Estilos para el encabezado */
 header {
-    background-color: #344e41ff;
+    background-color: #344e41ff; /* Color de fondo del encabezado */
     background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
     background-position: center; /* Centra la imagen en el fondo */
     color: #fff; /* Color del texto */
     padding: 1rem 0; /* Espaciado interno */
     text-align: center; /* Alineación del texto */
+    position: relative; /* Necesario para posicionar la imagen */
 }
+
+/* Estilos para la imagen en el encabezado */
 .header-img {
     max-width: 50px; /* Tamaño reducido de la imagen */
     height: auto;
     position: absolute; /* Permite la posición de la imagen */
     top: 10px; /* Ajusta la posición vertical */
     left: 10px; /* Ajusta la posición horizontal */
+}
+
 /* Estilos para la barra de navegación */
 nav ul {
     list-style: none;
@@ -144,5 +147,3 @@ button {
 button:hover {
     background-color: #333;
 }
-
-
