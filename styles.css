@@ -3,75 +3,71 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #588157ff; /* Asegúrate de que este color se aplique */
+    background-color: #588157ff;
     color: #fff;
-    text-align: center;
 }
 
 /* Estilos para el encabezado */
 header {
     background-color: #344e41ff;
-    padding: 1.5rem 0;
-    position: relative;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    position: relative; /* Necesario para posicionar la imagen correctamente */
 }
 
-header img {
-    max-width: 100px; /* Ajusta el tamaño de la imagen */
+.header-img {
+    max-width: 150px; /* Ajusta el tamaño máximo de la imagen */
     height: auto;
     position: absolute;
-    top: 1rem; /* Ajusta según el diseño */
+    top: 10px; /* Ajuste de la posición vertical */
     left: 50%;
     transform: translateX(-50%); /* Centra la imagen horizontalmente */
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2rem;
-}
-
 /* Estilos para la barra de navegación */
 nav {
-    background-color: #444;
+    background-color: #344e41ff;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 nav ul li {
+    display: inline-block;
     position: relative;
 }
 
 nav ul li a {
     color: #fff;
-    padding: 0.75rem 1.5rem;
+    padding: 0.5rem 1rem;
     text-decoration: none;
     display: block;
 }
 
-/* Estilos para los menús desplegables */
+/* Estilos para el menú desplegable */
 nav ul li .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #555;
+    background-color: #344e41ff;
     min-width: 160px;
     z-index: 1;
-    top: 100%;
-    left: 0;
 }
 
 nav ul li .dropdown-content a {
     color: #fff;
-    padding: 0.75rem 1.5rem;
+    padding: 0.5rem 1rem;
     text-decoration: none;
+    display: block;
+    text-align: left;
 }
 
 nav ul li .dropdown-content a:hover {
-    background-color: #666;
+    background-color: #555;
 }
 
 nav ul li:hover .dropdown-content {
@@ -80,28 +76,14 @@ nav ul li:hover .dropdown-content {
 
 /* Estilos para el contenido principal */
 main {
-    padding: 2rem;
+    padding: 1rem;
+    text-align: center;
 }
 
-.slider-container {
-    max-width: 800px;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-}
-
-.slider-content {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.slider-item {
-    flex: 0 0 100%;
-}
-
-.slider-item img {
-    width: 100%;
+.profile-img {
+    max-width: 300px;
     height: auto;
+    margin: 1rem 0;
 }
 
 /* Estilos para el pie de página */
@@ -109,6 +91,8 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
+    padding: 1rem;
+    position: relative; /* Asegúrate de que el pie de página no cubra el contenido */
+    width: 100%;
+    margin-top: 1rem; /* Espacio para separar el footer del contenido */
 }
