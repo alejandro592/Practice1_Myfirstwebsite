@@ -19,7 +19,12 @@ header {
     padding: 1rem 0; /* Espaciado interno */
     text-align: center; /* Alineación del texto */
 }
-
+.header-img {
+    max-width: 50px; /* Tamaño reducido de la imagen */
+    height: auto;
+    position: absolute; /* Permite la posición de la imagen */
+    top: 10px; /* Ajusta la posición vertical */
+    left: 10px; /* Ajusta la posición horizontal */
 /* Estilos para la barra de navegación */
 nav ul {
     list-style: none;
