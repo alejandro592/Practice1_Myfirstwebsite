@@ -1,1 +1,1 @@
-Hello, I'm Alejandro Antonio Soto Prado. Welcome to my portfolio about my career in Digital Design, where you can browse my website and much more.
+Hello welcome to my website which is the page of my online store which I made last quarter, in it you can see some of my products.
