@@ -18,7 +18,7 @@ header {
 
 /* Estilos para la imagen en el encabezado */
 .header-img {
-    max-width: 70px; /* Tamaño reducido de la imagen */
+    max-width: 100px; /* Tamaño reducido de la imagen */
     height: auto;
     display: block; /* Hace que la imagen se comporte como un bloque */
     margin: 0 auto; /* Centra la imagen horizontalmente */
