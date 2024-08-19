@@ -8,41 +8,82 @@
 </head>
 <body>
     <header>
-        <img src="jers.png" alt="jers.png" class="header-img">
+        <img src="jers.png" alt="Jerstreet" class="header-img">
         <h1>Jerstreet by Alejandro Soto</h1>
-        <nav>
-            <ul>
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">Home</a>
-                    <div class="dropdown-content">
-                        <a href="index.html">Home</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">The new</a>
-                    <div class="dropdown-content">
-                        <a href="aboutme.html">The new</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">Contact</a>
-                    <div class="dropdown-content">
-                        <a href="contact.html">Contact</a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
     </header>
+    <nav>
+        <ul>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Home</a>
+                <div class="dropdown-content">
+                    <a href="index.html">Home</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">The new</a>
+                <div class="dropdown-content">
+                    <a href="aboutme.html">The new</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Contact</a>
+                <div class="dropdown-content">
+                    <a href="contact.html">Contact</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
     <main>
         <section>
-            <h2>Who are we?</h2>
-            <p>This is an online store where you will find clothing, tennis shoes and accessories only in JERSTREET</p>
+            <h2>What's new of the week</h2>
+            <p>New products, buy the newest in our store.</p>
         </section>
-        <img src="jerstreet 5.png" height="300" width="250" alt="Esta imagen es mi foto de perfil">
-        <iframe width="560" height="300" src="https://www.youtube.com/embed/kx-ETIEeiIc?si=rr8jnjWL7vFnmUdr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="slider-container">
+            <div class="slider-content">
+                <div class="slider-item">
+                    <img src="tshirt1.png" height="300" width="300" alt="Imagen 1">
+                </div>
+                <div class="slider-item">
+                    <img src="tshirt2.png" height="300" width="300" alt="Imagen 2">
+                </div>
+                <div class="slider-item">
+                    <img src="tshirt3.png" height="300" width="300" alt="Imagen 3">
+                </div>
+                <div class="slider-item">
+                    <img src="tshirtv1.png" height="300" width="300" alt="Imagen 4">
+                </div>
+                <div class="slider-item">
+                    <img src="tshirtv2.png" height="300" width="300" alt="Imagen 5">
+                </div>
+                <div class="slider-item">
+                    <img src="tshirtv3.png" height="300" width="300" alt="Imagen 6">
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <p>&copy; 2024 JERSTREET</p>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let slideIndex = 0;
+            const slides = document.querySelectorAll(".slider-item");
+            const totalSlides = slides.length;
+
+            function showSlides() {
+                slides.forEach(slide => {
+                    slide.style.display = "none";
+                });
+
+                slideIndex++;
+                if (slideIndex > totalSlides) { slideIndex = 1; }
+
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 2000); // Cambia la imagen cada 2 segundos
+            }
+
+            showSlides();
+        });
+    </script>
 </body>
 </html>
