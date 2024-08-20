@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jerstreet website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="jers.png" alt="Jerstreet Logo" class="header-img">
+            <h1>Jerstreet by Alejandro Soto</h1>
+        </div>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="index.html" class="dropbtn">Home</a>
+                </li>
+                <li class="dropdown">
+                    <a href="aboutme.html" class="dropbtn">The new</a>
+                </li>
+                <li class="dropdown">
+                    <a href="contact.html" class="dropbtn">Contact</a>
+                </li>
+                  <li class="dropdown">
+                    <a href="shop.html" class="dropbtn">shop</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+  
+    <main>
+        <section>
+            <h2>Who are we?</h2>
+            <p>This is an online store where you will find clothing, tennis shoes, and accessories only in JERSTREET.</p>
+        </section>
+        <img src="jerstreet 5.png" alt="Profile Picture" class="profile-img">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kx-ETIEeiIc?si=rr8jnjWL7vFnmUdr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+        <!-- Nueva Sección: Artículos en Venta -->
+        <section class="products-section">
+            <h2>Our Products</h2>
+            <div class="products-grid">
+                <div class="product-item">
+                    <img src="img/product1.jpg" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>$19.99</p>
+                </div>
+                <div class="product-item">
+                    <img src="img/product2.jpg" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>$29.99</p>
+                </div>
+                <div class="product-item">
+                    <img src="img/product3.jpg" alt="Product 3">
+                    <h3>Product 3</h3>
+                    <p>$39.99</p>
+                </div>
+                <!-- Agrega más productos aquí -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 JERSTREET</p>
+        <a href="https://www.instagram.com/jerstreetmx?igsh=eGc1dGQ0d2hwbDhq&utm_source=qr" target="_blank" class="social-icon">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Slider de imágenes (si lo tienes implementado)
+            let slideIndex = 0;
+            const slides = document.querySelectorAll(".slider-item");
+            const totalSlides = slides.length;
+
+            function showSlides() {
+                slides.forEach(slide => {
+                    slide.style.display = "none";
+                });
+
+                slideIndex++;
+                if (slideIndex > totalSlides) { slideIndex = 1; }
+
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 2000);
+            }
+
+            if (totalSlides > 0) {
+                showSlides();
+            }
+        });
+    </script>
+</body>
+</html>
