@@ -6,12 +6,13 @@ body {
     background-color: #588157ff;
     color: #fff;
 }
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Lora', serif; /* Fuente para los encabezados */
 }
+
 /* Estilos para el encabezado */
 header {
-
     background-color: #344e41ff;
     color: #fff;
     padding: 1rem;
@@ -101,6 +102,49 @@ main {
 .slider-item img {
     width: 100%;
     height: auto;
+}
+
+/* Estilos para la sección de productos */
+.products-section {
+    padding: 2rem 1rem;
+    background-color: #344e41ff;
+    color: #fff;
+    text-align: center;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.product-item {
+    background-color: #588157ff;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-item h3 {
+    font-family: 'Lora', serif;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-item p {
+    font-weight: bold;
+    color: #344e41ff;
 }
 
 /* Estilos para el pie de página */
