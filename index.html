@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jerstreet website</title>
     <link rel="stylesheet" href="styles.css">
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap">
 </head>
 <body>
     <header>
-        <img src="jers.png" alt="Jerstreet Logo" class="header-img">
-        <h1>Jerstreet by Alejandro Soto</h1>
+        <div class="header-container">
+            <img src="jers.png" alt="Jerstreet Logo" class="header-img">
+            <h1>Jerstreet by Alejandro Soto</h1>
+        </div>
         <nav>
             <ul>
                 <li class="dropdown">
@@ -42,14 +44,43 @@
         <img src="jerstreet 5.png" alt="Profile Picture" class="profile-img">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/kx-ETIEeiIc?si=rr8jnjWL7vFnmUdr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </main>
+    <div>
+        <div>
+            <h3 style="text-align: center;">
+                Here I leave you a playlist that our most frequent clients chose
+            </h3>
+        </div>
+        <div style="text-align: center;">
+            <iframe 
+                id="spotifyPlayer"
+                src="https://open.spotify.com/playlist/5pbPp9Zz8v7Wn2uHMEYM2z?si=xgIiPVIQSbeQFZBb1-3XBg&pi=u-n41wSULOTdi4" 
+                width="300" 
+                height="380" 
+                frameborder="0" 
+                allowtransparency="true" 
+                allow="autoplay; encrypted-media">
+            </iframe>
+        </div>
+    </div>
+
+    <script>
+        // Obtener el elemento iframe
+        const spotifyPlayer = document.getElementById('spotifyPlayer');
+
+        // Esperar a que la página esté completamente cargada
+        window.onload = function() {
+            // Intentar reproducir el audio (esto puede ser bloqueado por el navegador)
+            spotifyPlayer.contentWindow.postMessage({method: 'play'}, '*');
+        };
+    </script>
+    
     <footer>
-        <footer>
-    <p>&copy; 2024 JERSTREET</p>
-    <a href="https://www.instagram.com/jerstreetmx?igsh=eGc1dGQ0d2hwbDhq&utm_source=qr" target="_blank" class="social-icon">
-        <i class="fab fa-instagram"></i>
-    </a>
-</footer>
+        <p>&copy; 2024 JERSTREET</p>
+        <a href="https://www.instagram.com/jerstreetmx?igsh=eGc1dGQ0d2hwbDhq&utm_source=qr" target="_blank" class="social-icon">
+            <i class="fab fa-instagram"></i>
+        </a>
     </footer>
+
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             let slideIndex = 0;
