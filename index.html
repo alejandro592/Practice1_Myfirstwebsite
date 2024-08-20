@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jerstreet website</title>
+    <title>Jerstreet Website</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap">
 </head>
@@ -16,30 +16,16 @@
         <nav>
             <ul>
                 <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">Home</a>
-                    <div class="dropdown-content">
-                        <a href="index.html">Home</a>
-                    </div>
+                    <a href="index.html" class="dropbtn">Home</a>
                 </li>
                 <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">The new</a>
-                    <div class="dropdown-content">
-                        <a href="aboutme.html">The new</a>
-                    </div>
+                    <a href="aboutme.html" class="dropbtn">The New</a>
                 </li>
                 <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">Contact</a>
-                    <div class="dropdown-content">
-                        <a href="contact.html">Contact</a>
-                    </div>
-                    
+                    <a href="contact.html" class="dropbtn">Contact</a>
                 </li>
-                 <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">Shop</a>
-                    <div class="dropdown-content">
-                        <a href="shop.html">Shop</a>
-                    </div>
-                    
+                <li class="dropdown">
+                    <a href="shop.html" class="dropbtn">Shop</a>
                 </li>
             </ul>
         </nav>
@@ -52,42 +38,12 @@
         <img src="jerstreet 5.png" alt="Profile Picture" class="profile-img">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/PuH-7swYK5c?si=Vb6pzIu1YD61-V4l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </main>
-    <div>
-        <div>
-            <h3 style="text-align: center;">
-                Here I leave you a playlist that our most frequent clients chose
-            </h3>
-        </div>
-        <div style="text-align: center;">
-            <iframe 
-               src="https://open.spotify.com/embed/playlist/5pbPp9Zz8v7Wn2uHMEYM2z?utm_source=generator" 
-    width="300" 
-    height="380" 
-    frameborder="0" 
-    allowtransparency="true" 
-    allow="encrypted-media">
-            </iframe>
-        </div>
-    </div>
-
-    <script>
-        // Obtener el elemento iframe
-        const spotifyPlayer = document.getElementById('spotifyPlayer');
-
-        // Esperar a que la página esté completamente cargada
-        window.onload = function() {
-            // Intentar reproducir el audio (esto puede ser bloqueado por el navegador)
-            spotifyPlayer.contentWindow.postMessage({method: 'play'}, '*');
-        };
-    </script>
-    
     <footer>
         <p>&copy; 2024 JERSTREET</p>
         <a href="https://www.instagram.com/jerstreetmx?igsh=eGc1dGQ0d2hwbDhq&utm_source=qr" target="_blank" class="social-icon">
             <i class="fab fa-instagram"></i>
         </a>
     </footer>
-
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             let slideIndex = 0;
